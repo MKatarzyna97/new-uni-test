@@ -3,16 +3,18 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
     const styles = {
-        color: "white"
+        color: "white",
+        textDecoration: "none"
     }
     return (
         <nav className="myNav">
-           <Link style={styles} to="/"> <h3>Logo</h3> </Link>
+           <Link style={styles} to="/home"> <h3>HelloApp</h3> </Link>
             <ul>
                <Link style={styles} to="/about"> <li>About</li>
                </Link>
-                <Link style={styles} to="/Profile"><li>Profile</li></Link>
-                <Link style={styles} to="/Shop"><li>Shop</li></Link>
+                <Link style={styles} to="/Galeria"><li>Galeria</li></Link>
+                
+                <Link style={styles} to="/Inspiration"><li>Znajdź inspirację</li></Link>
             </ul>
         </nav>
     )

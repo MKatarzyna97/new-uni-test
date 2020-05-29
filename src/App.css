@@ -1,5 +1,7 @@
 
-
+body {
+    font-family: 'Open Sans';
+}
 .itemsList li {
     list-style: none;
     padding: 0.5em;
@@ -14,29 +16,106 @@
     flex-direction: column;
    
     text-align: center;
+    
 
 }
 
 .myNav {
-    background-color: #222222;
+    background-color: #348074;
     color: blanchedalmond;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
+    
 }
 
 .myNav ul {
     display: flex;
+    
     
 }
 .myNav li {
     list-style: none;
     padding-left: 3em;
     padding-right: 3em;
+    
 }
+
 
 .mainHomeDiv {
     margin-left: 4em;
     margin-right: 4em;
 }
+
+/*STARY PLIK*/ 
+
+h1 {
+    color: #348074;
+    font-weight: 300;
+  }
+  
+  p {
+    color: #222222;
+    font-weight: 300;
+    font-size: 23px;
+  }
+  
+  .titleName {
+    color: #348074;
+    font-weight: 300;
+    margin-bottom: 0;
+    margin-top: 1.5em;
+    padding-bottom: 0;
+   
+  }
+  
+  .nameGreeting {
+    color: #348074;
+    font-weight: 300;
+  }
+  
+  .welcomeHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3em;
+  }
+  
+  .welcomeHeader img {
+    border-color: white;
+    border-style: solid;
+    border-radius: 50%;
+  }
+  
+  hr {
+    color: white;
+  }
+  
+  .nameInput {
+    height: 27px;
+    width: 270px;
+    border-radius: 10px;
+    border-width: thin;
+    border-style: solid;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  ::placeholder {
+    text-align: center;
+    
+  }
+  
+  button:hover {
+    background-color: red;
+  }
+  
+  .myName {
+    font-weight: 500;
+  }
+  
+  li {
+    list-style: none;
+  }

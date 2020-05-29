@@ -12,7 +12,7 @@ function Category ({match}) {
 
   const fetchItem = async () => {
       const fetchItem = await fetch(
-          `https://reqres.in/api/users?page=2=${match.params.id}`
+          `https://programming-quotes-api.herokuapp.com/quotes/lang/en=${match.params.id}`
       );
       const item = await fetchItem.json();
       setItem(item);

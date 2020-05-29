@@ -3,10 +3,13 @@ import './App.css';
 
 import About from "./components/about";
 import Navbar from "./components/myRouterComponents/navbar";
-import Profile from "./components/profile";
+import Galeria from "./components/galeria";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Category from "./trial";
-import Shop from "./Shop"
+import Home from "./components/home";
+import Inspiration from "./components/Inspiration";
+import GoodDoggo from './components/gooddoggo';
+import BadDoggo from './components/baddoggo';
 
 
 function App() {
@@ -17,10 +20,12 @@ function App() {
       <Switch>
           
           <Route path="/about" component={About} />
-          <Route path="/profile" component={Profile} />
-          <Route path="/shop" exact component={Shop} />
-          <Route path="/shop/:id" component={Category} />
-          <Route path="/home/:id" component={Category} />
+          <Route path="/galeria" component={Galeria} />
+          <Route path="/home" component={Home} />
+          <Route path="/inspiration/" component={Inspiration} />
+          <Route path="/inspiration/:id" exact component={Category} />
+          <Route path="/gooddoggo" component={GoodDoggo} />
+          <Route path="/baddoggo" component={BadDoggo} />
       </Switch>
  
     </div>
