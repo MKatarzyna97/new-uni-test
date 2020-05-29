@@ -17,9 +17,15 @@ const fetchItems = async () => {
 };
 
 
+
+
+
 return (
    
     <div> 
+
+
+      
     <ul className='itemsList'>
     {items.map(item => (<div><hr></hr><li key={item.itemid}><Link to={`/inspiration/${item.itemid}`}>{item.en}</Link></li></div>))}
         </ul>
