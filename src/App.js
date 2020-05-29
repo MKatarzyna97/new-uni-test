@@ -12,6 +12,7 @@ import GoodDoggo from './components/gooddoggo';
 import BadDoggo from './components/baddoggo';
 
 
+
 function App() {
   return (
     <Router>
@@ -26,6 +27,7 @@ function App() {
           <Route path="/inspiration/:id" exact component={Category} />
           <Route path="/gooddoggo" component={GoodDoggo} />
           <Route path="/baddoggo" component={BadDoggo} />
+          
       </Switch>
  
     </div>

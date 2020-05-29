@@ -1,10 +1,7 @@
 
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Happydoggo2 from '../photos/happydoggo2.png'
-import Angrydoggo from '../photos/angrydoggo.jpg';
-import Whitesmile from '../photos/whitesmile.png'
-import Sadface from '../photos/sadface.png'
+
 
 
 
@@ -159,7 +156,7 @@ class Home extends Component {
 
     // STRONA PO WPISANIU IMIENIA
 
-    let myWelcome = (<div><h1 className="nameGreeting" style={this.flexStyles}><span style={{display: "block"}}>Dzień dobry, <span className='myName' style={{color: "#9DE5C6"}}>{this.state.username}</span>!</span></h1>
+    let myWelcome = (<div><h1 className="nameGreeting" style={this.flexStyles}><span style={{display: "block"}}>Dzień dobry, <span className='myName' style={{color: "#348074"}}>{this.state.username}</span>!</span></h1>
     <p style={this.flexStyles}>Czy lubisz pieski?</p>
    
    <button  onMouseEnter={changeBackground} onMouseLeave={noChange} style={this.buttonStyle} onClick={this.doggoSwitchFriend}><Link style={this.linkStyles} to="/gooddoggo">Oczywiście!</Link></button>

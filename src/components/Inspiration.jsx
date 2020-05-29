@@ -15,19 +15,19 @@ const fetchItems = async () => {
     console.log(items);
     setItems(items);
 };
-
-
-
-
+const flexStyles = {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    
+   }
 
 return (
    
-    <div> 
-
-
-      
+    <div style={flexStyles}> 
     <ul className='itemsList'>
-    {items.map(item => (<div><hr></hr><li key={item.itemid}><Link to={`/inspiration/${item.itemid}`}>{item.en}</Link></li></div>))}
+    {items.map(item => (<div><hr></hr><li key={item.itemid}><Link className="quoteLink" to={`/inspiration/${item.itemid}`}>{item.en}</Link></li></div>))}
         </ul>
         </div>
 )
